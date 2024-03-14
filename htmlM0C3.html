@@ -1,0 +1,74 @@
+<h1>Formulare HTML</h1>
+
+<p>
+    Forumarele trebuie sa includa elemente de tip input, asa-numitele campuri.
+</p>
+
+<h3>Elemente principale</h3>
+<ul>
+    <li>Input - elementul care permite userului sa interactioneze
+        cu formularul, sa il completeze.
+    </li>
+    <li>Button - elementul care permite userului sa anunte formularul
+        ca si-a incheiat modificarile.
+    </li>
+</ul>
+
+<h4>Form</h4>
+Este elementul care inglobeaza campurile. Acest element poate
+primi un "method" care ne specifica felul de a trimite datele
+inapoi inspre server. Optiunile de retinut sunt "get" si "post".
+<h4>Input</h4>
+Atribute Input:
+<ul>
+    <li>Placeholder - Un text ajutator care-i spune utilizatorului
+        ce reprezinta campul respectiv. Acesta dispare odata ce
+        utilizatorul incepe completarea inputului.
+    </li>
+    <li>Type - Un atribut care are cateva valori fixe:
+        text, password, email, tel, number (+others)
+    </li>
+    <li>Required - Un atribut care poate fi scris sub forma
+        <b>required</b> sau <b>required=true</b> care va
+        marca un camp ca fiind obligatoriu
+    </li>
+    <li>Minlength & maxlength - Un atribut numeric avand
+        rolul de a specifica o lungime minima sau maxima
+        pentru valoarea unui camp.
+    </li>
+    <li>Value - Atributul care specifica valoarea predefinita
+        a unui camp.
+    </li>
+    <li>disabled - Atributul care ne permite dezactivarea unui camp
+    </li>
+</ul>
+<hr />
+<form method="get">
+    <label for="nume">Nume</label><br />
+    <input minlength=2 name="nume" placeholder="nume" type="text" id="nume" /> <br />
+    <label for="pass">Parola</label><br />
+    <input maxlength=2 name="parola" placeholder="parola" type="password" id="pass" /> <br />
+    <label for="age">Varsta</label><br />
+    <input name="varsta" placeholder="varsta" type="number" id="age" /> <br />
+    <br />
+
+    <select name="sex" id="sex">
+        <option value="m">barbat</option>
+        <option value="f">femeie</option>
+        <option value="na">N/A</option>
+    </select>
+    <br />
+
+    <input type="radio" name="persFizica" value="companii" id="pf-comp">
+    <label for="pf-comp"> Companie </label> <br />
+    <input type="radio" name="persFizica" value="IMM" id="pf-imm">
+    <label for="pf-imm">Pers fizica autorizata / SRL Micro </label><br />
+    <input type="radio" name="persFizica" value="om" id="pf-pf">
+    <label for="pf-pf">Persoana Fizica</label> <br />
+
+    <br />
+    <input type="checkbox" name="domiciliuRo"> Stabilit in Ro <br />
+
+
+    <button type="Submit">Submit Button</button>
+</form>
