@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Curs 4 - Tabele</title>
+</head>
+
+<body>
+    <h1>Tabele HTML</h1>
+    <p>Elementul de baza este table, acesta este containerul principal.</p>
+    <p>In table vom avea table rows (randuri) si table divisions (celule, coloane).</p>
+    <p>Acestea vor fi denotate cu tr si td.</p>
+    <p>Pe langa td exista si th care va avea rol estetic, vine de la table heading, si ne ajuta sa marcam capul de
+        tabel.</p>
+
+    <hr />
+
+    <h4>Animals and number of feet</h4>
+    <table border="1" width="500">
+        <tr>
+            <th>Animal</th>
+            <th>Tip [s/d]</th>
+            <th>Nr Picioare</th>
+        </tr>
+        <tr>
+            <td>Pisica</td>
+            <td rowspan="2">Domestic</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Caine</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Lup</td>
+            <td>Salbatic</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Vaca</td>
+            <td>Domestic</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Peste</td>
+            <td colspan="2"> N/A </td>
+        </tr>
+
+    </table>
+
+    <br />
+    <hr />
+    <h1>Exemplu tabel layout si tabel de layout in form in layout de tabel</h1>
+    <p>Vom face un tabel cu rol de layout</p>
+    <p>In acel tabel vom avea un sidebar si un formular</p>
+    <p>In formular vom aranja lucrurile cu un alt tabel</p>
+
+    <hr />
+    <table width="100%">
+        <tr>
+            <td width="20%">
+                <h4>Sidebar</h4>
+                <br />
+                Bine ati venit pe site
+            </td>
+            <td>
+                <h2>Formular Inscriere</h2>
+                <form>
+                    <table>
+                        <tr>
+                            <td><input name="nume" placeholder="nume" /></td>
+                            <td><input name="prenume" placeholder="prenume" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button>Doresc salvarea datelor si accept GDPR. Se pot si vinde</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+
+    <a href="./curs3.html">Inapoi la cursul anterior</a>
+    <a href="./curs5.html">TBD</a>
+
+</body>
+
+</html>
