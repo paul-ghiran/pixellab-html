@@ -1,0 +1,9 @@
+/*
+ Aplicati culoarea rosie unui link aflat intr-un pargraf care
+ este fratele imediat al unui paragraf care se afla dupa un 
+ h1 care este situat direct intr-un element de tip article.
+*/
+
+article>h1~p+p a {
+    color: red;
+}

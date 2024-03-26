@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS01</title>
+    <link rel="stylesheet" href="./CSS01.css" />
+
+    <style>
+        .internal-styles {
+            color: green;
+            font-weight: bold;
+        }
+
+        .lorem {
+            color: red;
+        }
+
+        #ipsum {
+            color: blue;
+        }
+
+        [href="#prio"] {
+            font-size: 25px;
+        }
+
+        [href^="#"] {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cascading Style Sheets</h1>
+    3 tipuri de a-l folosi:
+    <ul>
+        <li style="color:blue; font-weight: bold;">Inline Styles - Ca atribut pe HTML</li>
+        <li class="internal-styles">Internal Styles - In fisierul HTML folosind &lt;style&gt; </li>
+        <li class="external-styles">External Styles - In fisier dedicat, folosind &lt;link href=""/&gt;</li>
+    </ul>
+
+    <h3 id="prio">Prioritatea</h3>
+    <p>In ordinea specificata mai sus, CSS-ul se va suprascrie datorita "specificitatii" in felul urmator:
+        1. Cel mai putin specific este CSS-ul extern. Asta pentru ca un fisier extern poate fi folosit de catre mai
+        multe documente HTML.
+        <br />
+        2. Urmatoarea varianta, mai specifica, este CSS-ul intern, cel declarat in fisier. Asta pt ca se refera doar la
+        HTML-ul curent, si la continutul lui.
+        <br />
+        3. Cea mai specifica varianta este CSS-ul inline, acesta se aplica (si refera) la un singur element.
+    </p>
+
+    <p>De exemplu:
+    <h6 class="lorem" style="color:blue">Lorem ipsum dolor sit amet</h6>
+    </p>
+
+    <h2>Reguli CSS</h2>
+    <p>Regulile CSS sunt felul in care specificam ce valori vrem sa dam caror proprietati de pe care elemente.</p>
+    <ol>
+        <li>Primul pas este scrierea selectorului.</li>
+        <li>Al doilea pas este setul de proprietati pe
+            care dorim sa le modificam, intre acolade
+            si separate prin punct virgula.</li>
+    </ol>
+
+    <h3>Selectori CSS</h3>
+    <p>Selectorii sunt anumite bucati de text, care vor avea rolul de a reprezenta "adresa" elementelor pe care vrem sa
+        le selectam, pentru modificare.</p>
+    <h4>Tipuri de selectori</h4>
+    <ul>
+        <li>Selectori Tag / Element name - "h1" va selecta elementele de tip h1.</li>
+        <li>Selectori de tip class - .lorem va selecta toate elementele cu clasa "lorem". Totul porneste de la punct.
+        </li>
+        <li>Selectori de tip ID - #ipsum va selecta primul element cu ID-ul ipsum.
+            <div id="ipsum">ASDF</div>
+        </li>
+        <li>Selectori de tip atribut - Acei selectori pe care-i putem folosi pentru a selecta elemente in functie de
+            orice atribut.
+            <p>
+                <a href="#prio">Sus la prioritati.</a>
+                <a href="#titlu">Sus la titlu.</a>
+            </p>
+            <p>Sintaxa de baza a selectorilor pe baza de atribute este paranteze drepte pt incapsularea selectorului [],
+                in care specificam ce atribut cautam, ce operator de comparatie folosim, si respectiv ce valoare vom
+                compara.</p>
+        </li>
+    </ul>
+
+    <b>Toti selectorii pot fi combinati intre ei</b>, atat prin: <br />
+    - fuziune (lipire), de exemplu h1.principal - acesta va
+    reprezenta un element de tip "h1" care are clasa "principal"<br />
+    - pauza (pauza intre 2 selectori) - aceasta pauza va insemna
+    o combinatie de tip ierarhic, de exemplu "a b" va insemna un element de tip "b" care se afla intr-un element de tip
+    "a"
+
+    <h4>Selectori complecsi: ierarhizare</h4>
+    <ul>
+        <li>Descendent: "a b" cu pauza va selecta orice element b din a, indiferent daca e descendent direct sau nu.
+        </li>
+        <li>Descendent direct: "a>b" cu > va selecta toate elementele b care sunt descendentii directi ai unui element a
+        </li>
+        <li>Sibling: "a ~ b" cu ~tilda va selecta orice b care urmeaza dupa un a in pagina</li>
+        <li>Direct sibling: "a + b" cu plus va selecta orice b care este pozitionat imediat dupa un a, pe acelasi nivel
+        </li>
+    </ul>
+
+    <img src="./css01.png" alt="">
+
+    <h4>Combinarea mai multor selectori</h4>
+    <p>Daca dorim sa aplicam o regula CSS pe mai multi selectori, si anume nu pe un selector mai specific / complex, ci
+        pur si simplu pe 2 selectori diferiti sau mai multi, putem sa-i separam folosind virgula.</p>
+    <p>ex: a, p { color: green }; <- va selecta atat linkurile cat si paragrafele</p>
+
+            <h3 style="color:red">Exercitii dragute CSS selectors</h3>
+            <a href="https://flukeout.github.io/">https://flukeout.github.io/</a>
+
+            <h3>Culorile in CSS</h3>
+            <p>Culorile in CSS (sau alte arii ale informaticii) pot fi reprezentate in mai multe feluri, dar totul
+                porneste de la ideea e pixel, si felul in care se combina lumina emisa de un pixel pentru a forma o
+                anumita nuanta.</p>
+            <ul>
+                <li>Culori text: Acestea specifica valori de tipul "red". Acestea nu sunt recomandate pentru ca diferite
+                    browsere pot interpreta culorile prin diferite nuante.</li>
+                <li>RGB - red green blue sub forma "rgb(R,G,B)" unde R,G,B sunt valori numerice pentru intensitatea
+                    fiecarei culori.
+                    Aceste intensitati vor fi in intervalul 0-255, de exemplu rgb(255, 0, 255) => va rezulta violet.
+                </li>
+                <li>HEX- Hex code, se refera la un cod format din 6 caractere care de fapt reprezinta 2 perechi de
+                    caracter, FF00FF - va fi violet, pentru ca de fapt se refera tot la RGB, sub forma "FF" "00" "FF"
+                </li>
+                <li>HSL - Hue saturation lighting, un sistem folosit mai rar.</li>
+            </ul>
+
+            <h3>Primele proprietati CSS</h3>
+            <p><b>color</b> - va reprezenta culoarea textului dintr-un element</p>
+            <p><b>border</b> - va reprezenta un chenar. El va primi o valoare sub forma
+                "_A_px _B_ _C_" unde _A_ reprezinta un nr de pixeli care va da grosimea chenarului, _B_ tipul sau
+                aspectul chenarului, exemplu solid, dotted, dashed, si _C_ va reprezenta culoare, fie ea scrisa rgb,
+                hex, sau cu nume.
+                <br /> Exemplu: a { border: 1px solid blue };
+            </p>
+            <p><b>background-color</b> - va reprezenta culoarea fundalului unui element</p>
+</body>
+
+</html>
