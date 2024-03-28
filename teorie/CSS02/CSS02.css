@@ -1,0 +1,73 @@
+p {
+    font-family: 'Reddit Mono', monospace;
+}
+
+.font-weight-examples {
+    font-weight: bold;
+}
+
+
+.font-weight-examples p {
+    font-weight: bold;
+}
+
+.font-weight-examples p~p {
+    font-weight: normal;
+}
+
+.font-weight-examples p+p+p {
+    font-weight: inherit;
+    color: green;
+}
+
+.ex-px {
+    font-size: 20px;
+}
+
+.ex-em {
+    font-size: 1;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.overline {
+    text-decoration: overline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.serif-sans {
+    font-size: 30px;
+}
+
+.serif-sans li {
+    font-family: serif;
+}
+
+.serif-sans li+li {
+    font-family: sans-serif;
+}
+
+.padding-ex {
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+
+    /* Punem chenar pt demonstrarea diferentei dintre margin si padding */
+    border: 1px solid red;
+}
+
+.margin-ex {
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+
+    /* Punem chenar pt demonstrarea diferentei dintre margin si padding */
+    border: 1px solid red;
+}
