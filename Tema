@@ -36,5 +36,28 @@ doctype<!DOCTYPE html>
      <hr/>
     <h2> <u> Contact</h2> </u> 
     <p> My Linkedin profile <a href="http://www.filmeserialeonline.org/home-fsonline-hd-14">link </a> </p>
+    <br/>
+    <table width="50%" border="1">
+      <tr>
+          <th width="25%">Nationality</th>
+          <th width="25%">License</th>
+        
+      </tr>
+      <tr>
+          <td>Romania</td>
+         
+        
+         
+      </tr>
+      <tr>
+          <td >Yes </td>
+          
+      </tr>
+      
+      </tr>
+  </table>
+  
+
+
   </body>
 </html>
