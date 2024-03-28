@@ -1,1 +1,40 @@
-https://codepen.io/Durbu/pen/LYvGmGy
+doctype<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CV Tema</title>
+</head>
+<body>
+    <h1>Curriculum Vitae Ismail Aladin</h1>
+    
+    <img src="https://studiofoto122.ro/wp-content/uploads/2021/07/fotograf-corporate-studio-foto-profesional-3.jpg" alt="poza cv">
+    <hr/>
+    <h1> Experience </h1>
+     
+    <p> <b>Lead frontend developer  </b></p> 
+    <br/>
+    <br/>
+    <ol>
+    <li>  <u> 2015-2020</u>
+      Frontend developer @ Google </li>
+      <li> <u> 2018-present</u>
+        Freelance web design</li>
+      <li><u> 2020-present</u>
+        Team leader @ Randstad Digital </li>  </ol>
+      <br/>
+    <br/>
+     <hr/>
+      <h3> Skills</h3>
+    <ul><i> <li> HTML </li>
+            <li>  CSS </li>
+      <li> Javascript</li>
+      <li> ReactJS</li> </i> </ul>
+   <br/>
+   <br/>
+   <br/>
+    <br/>
+     <hr/>
+    <h2> <u> Contact</h2> </u> 
+    <p> My Linkedin profile <a href="http://www.filmeserialeonline.org/home-fsonline-hd-14">link </a> </p>
+  </body>
+</html>
