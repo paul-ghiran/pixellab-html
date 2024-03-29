@@ -1,3 +1,6 @@
+p, li, div{
+    color: #222;
+}
 .teorie {
     font-family: 'Reddit Mono', monospace;
 }
