@@ -15,5 +15,5 @@ Pe scurt, faceti o copie a fisierului tema.html in repository-ul vostru, luati s
 6. Adaugati o spatiere verticala de 40 de pixel intre rubrici (font-size, text-shadow, samd) si 60 de pixeli intre sectiuni (Proprietati Modificare text si respectiv Spacing & shaping)
 7. Ingrosati primul paragraf de la fiecare rubrica (rubrica precum font-size, text-shadow si asa mai departe).
 8. Adaugati la sfarsitul paginii un link cu textul "La Inceput" care sa duca la inceputul paginii. Acest link va trebui incadrat intr-un chenar albastru cu latimea de 100 de pixeli, si o spatiere interioara de 10px iar culoarea textului va trebui sa fie alba. Acesta va trebui sa aiba o distanta de 30px de la ultimul element de deasupra lui.
-9. 
+
 *Hint:* Nu veti putea da latimea linkului in sine, asa ca va trebui sa faceti un artificiu HTML.
