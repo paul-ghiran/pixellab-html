@@ -1,6 +1,9 @@
-p, li, div{
+p,
+li,
+div {
     color: #222;
 }
+
 .teorie {
     font-family: 'Reddit Mono', monospace;
 }
@@ -101,4 +104,43 @@ ul li {
     border: 1px solid red;
     width: 30vw;
     height: 20vw;
+}
+
+
+/* Rezovlare */
+
+h1,
+h2,
+h3 {
+    font-family: sans-serif;
+}
+
+h2 {
+    color: #262626;
+    margin-top: 60px;
+}
+
+h3 {
+    text-decoration: underline;
+    color: #444444;
+    margin-top: 40px;
+}
+
+.exemple {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ededed;
+    padding: 10px;
+}
+
+h3+p {
+    font-weight: bold;
+}
+
+a{
+    display: inline-block;
+    background-color: blue;
+    margin-top:30px;
+    color: white;
+    padding: 10px;
+    width: 100px;
 }
