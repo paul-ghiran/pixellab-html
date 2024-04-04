@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css04.css">
+</head>
+
+<body>
+    <h1>Curs CSS04</h1>
+
+    <h2>z-index</h2>
+
+    <p>Se refera la coordonata in " a 3a dimensiune" a elementelor, unde 0 inseamna lipit de ecran, 1 inseamna peste
+        ecran, 2 inseamna peste elementul care e peste ecran, samd.</p>
+    <p>Pentru a da coordoanta Z, avem nevoie de position relative, absolute sau fixed</p>
+
+
+    <h2>Selectori De stare</h2>
+    <p>Pseudo selectorii, selectori de stare, sunt selectori care incep cu ":"</p>
+    <h3>:first-child</h3>
+    <p>Inseamna primul copil, se aplica un "modifier" pe un alt selector pentru a afecta doar primul child</p>
+
+    <div class="capitol-fc">
+        <ul>
+            <li><span>First</span> child</li>
+            <li>
+                <p>Last</p>
+                <p>Child</p>
+            </li>
+        </ul>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+
+    ^ Aplica verificarea daca elementul este primul din partinte.
+
+    <h3>:last-child </h3>
+    <p>Functioneaza la fel precum first-child, dar se refera la ultimul</p>
+
+    <h3>:nth-child( valoare )</h3>
+    <p>Copilul al n-lea, unde "valoare" este n, sau o formula bazata pe n.</p>
+    <ol class="capitol-nc">
+        <li>Lorem.</li>
+        <li>At.</li>
+        <li>Repudiandae!</li>
+        <li>Quasi.</li>
+        <li>Facilis.</li>
+        <li>Quis.</li>
+    </ol>
+
+    <p>1. Valoare Numerica Simpla: Aplicati bold celui de-al 3lea copil</p>
+    <p>2. Valoare para/impara - Odd/Even: Aplicati un background gri deschis elementelor impare</p>
+    <p>3. Valoare formula n: Aplicati color:blue odata la 3 elemente.</p>
+
+    <h3>:first-of-type</h3>
+
+    <div class="capitol-ft">
+        <ul>
+            <li><span>First</span> of type example</li>
+            <li>
+                <p>One </p>
+                <p>simple</p>
+                <p>example</p>
+            </li>
+        </ul>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <h3>:last-of-type</h3>
+    <p>Functioneaza pe baza verificarii daca elementul nostru este primul de tipul lui din parinte</p>
+    <h3>:nth-of-type(valoare)</h3>
+    <p>Functioneaza la fel precum nth-child ca valori acceptate, dar da match la primul element de tipul specificat, nu
+        neaparat primul din parinte de orice tip</p>
+
+    <h2>Pseudo Selectori de stare / interactiune</h2>
+    <h3>:hover</h3>
+    <p>Se aplica unui element peste care se afla cursorul (mouse-ul).</p>
+
+    <p>
+        <a href="#">Link-urile</a> aplica la hover un cursor de tip pointer (manuta) de exemplu. Dar putem face mult mai
+        mult.
+    </p>
+
+    <h3>:focus</h3>
+    <p>Se aplica la inputuri pentru a se schimba atunci cand userul selecteaza acel input.</p>
+
+    <h3>:active</h3>
+    <p>Se aplica la elemente atunci cand userul da click pe ele.</p>
+
+</body>
+
+</html>
