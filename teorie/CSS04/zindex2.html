@@ -1,0 +1,35 @@
+<style>
+    .patrat {
+        background: red;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        z-index: 3;
+    }
+
+    .patrat+.patrat {
+        background: blue;
+        top: 100px;
+        left: 100px;
+
+        z-index: 2;
+    }
+
+    .patrat+.patrat+.patrat {
+        background: yellow;
+        top: 200px;
+        left: 200px;
+
+        z-index: 1;
+    }
+</style>
+
+<body>
+    <div class="patrat">Unu</div>
+    <div class="patrat">Doi</div>
+    <div class="patrat">Trei</div>
+</body>

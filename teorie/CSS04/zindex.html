@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        padding-top: 60px;
+    }
+
+    nav {
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-bottom: 1px solid lightgray;
+        position: fixed;
+        height: 60px;
+        line-height: 60px;
+        background-color: lightblue;
+
+        /* Z-index inseamna care este "deasupra". Numar mai mare => Mai sus" */
+        z-index: 2;
+    }
+
+    main {
+        width: 70%;
+        margin: auto;
+        margin-top: 50px;
+        border: 1px solid #ededed;
+        padding: 25px;
+    }
+
+    .sidebar {
+        padding-top: 80px;
+        position: fixed;
+        display: none;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: rgb(200, 200, 200)
+    }
+
+    input:checked+.sidebar {
+        display: block;
+    }
+
+    .menu-checkbox-label,
+    #menu-checkbox {
+        z-index: 3;
+        position: relative;
+    }
+</style>
+
+<body>
+    <nav>
+        <a href="#">Link1</a>
+        <a href="#">Link2</a>
+        <a href="#">Link3</a>
+        <a href="#">Link4</a>
+    </nav>
+    <main>
+        <h1>Titlu Pagina</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium perferendis, odit dolore nulla quidem,
+            pariatur, velit magnam cupiditate reiciendis vero id laborum illo vel sunt distinctio. Quos deserunt, facere
+            ut consequuntur excepturi minus nam tenetur voluptate quam ducimus tempore unde aliquam rerum, autem eum
+            deleniti ea? Vel harum quos ratione rerum. Maiores facilis a ipsum. Odio.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, velit? Delectus, quidem omnis ipsum, totam
+            nostrum aliquam amet ut placeat aut ad laudantium possimus, quibusdam doloribus blanditiis facere!
+            Consequatur quidem quod laudantium error facilis, tempora ab placeat assumenda.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut beatae architecto inventore, itaque delectus
+            nostrum cum dicta temporibus alias vitae quam quos perspiciatis non veritatis voluptates laboriosam veniam?
+            Assumenda distinctio vero exercitationem aut maiores tempore, deleniti illum incidunt doloribus ipsam
+            corrupti aperiam fuga nihil dignissimos possimus obcaecati. Iure, temporibus iste sequi officia magni, quis
+            quam accusantium rerum libero consequuntur, veniam earum est incidunt porro labore perferendis animi aliquam
+            nesciunt. Explicabo repudiandae dolorum atque a! Nisi aperiam rerum odio laboriosam aut consectetur
+            excepturi, atque mollitia sequi velit voluptate laborum repellendus esse, possimus quod beatae pariatur
+            delectus voluptas commodi quas cupiditate error magnam. Accusantium, vel distinctio numquam sunt, eveniet
+            dolorem nostrum cumque repudiandae dolore, recusandae ducimus culpa deleniti reiciendis quos quas ullam.
+            Earum officia error dolorum dignissimos, labore velit placeat omnis adipisci voluptate eos. Dolore rem
+            inventore unde nisi possimus delectus beatae porro quaerat dolores dolorem vero suscipit dolor id incidunt
+            quos fuga eum eos amet, quisquam magni soluta. Saepe ratione placeat voluptatum dolorem asperiores at
+            consectetur hic a eum? Autem, sed velit. Odio, libero. Fuga quia aliquam provident distinctio similique
+            voluptatibus eum laudantium temporibus unde. Doloremque soluta placeat architecto quo ut tempore minima
+            temporibus, cumque ipsa sint, similique incidunt aliquid illo at aliquam maiores non! Harum error eius vitae
+            in nemo illo non molestias alias tenetur unde accusantium soluta neque magni reiciendis quae labore, atque
+            aliquid suscipit asperiores reprehenderit quisquam beatae vero aut laboriosam? Impedit nihil atque sapiente
+            repudiandae culpa molestias!
+            Perferendis maxime delectus distinctio esse autem ad libero commodi cum dolor illo expedita, sint illum
+            cumque possimus numquam aut consequatur? Velit explicabo veniam eaque maxime, minima nesciunt. Consequuntur
+            voluptatum quasi maiores magni obcaecati recusandae facilis maxime, sint modi numquam possimus,
+            necessitatibus quidem sit fugiat quod incidunt dolorem iste vitae assumenda eligendi illum asperiores dicta,
+            dignissimos laboriosam. Libero possimus, laboriosam autem nulla numquam architecto est labore! Delectus
+            illum dolores adipisci commodi iusto provident rem maxime, nulla nisi sapiente neque inventore distinctio
+            accusamus, obcaecati unde consequuntur magni debitis! Necessitatibus cum, molestiae voluptatum magni
+            excepturi, incidunt rerum minus aspernatur esse vitae tempore corporis culpa minima molestias at magnam, quo
+            aliquam veritatis perspiciatis enim officia soluta qui et velit? Exercitationem eos voluptates ullam
+            delectus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium est, quae, blanditiis ad, expedita animi
+            enim quod eligendi corporis ea vel ipsa. Atque impedit eos sint excepturi quidem ducimus in consequatur
+            inventore non, recusandae reprehenderit facere. Ut, temporibus vitae! Laboriosam debitis et iure possimus
+            dolorum maiores sequi incidunt culpa nam illo! Vitae, dignissimos! Rerum adipisci officiis asperiores
+            expedita deserunt natus qui deleniti amet sint totam impedit doloribus pariatur, eius eveniet non, ducimus,
+            earum maxime voluptatum sit. Quidem accusamus distinctio, dolores aut impedit porro facere sed
+            reprehenderit, sapiente dolore eius explicabo velit fuga ad incidunt neque tenetur exercitationem ratione
+            harum assumenda debitis molestias. Incidunt aut illum iure, provident culpa minus quaerat ab facilis totam
+            amet dolor qui sapiente deserunt, cumque iusto?</p>
+    </main>
+    <label class="menu-checkbox-label" for="menu-checkbox">Meniu</label>
+    <input type="checkbox" id="menu-checkbox">
+
+    <div class="sidebar">
+        <h3>Submeniu</h3>
+        <p>Link 1</p>
+    </div>
+
+</body>
+
+</html>

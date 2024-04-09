@@ -1,0 +1,56 @@
+.card {
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ededed;
+}
+
+.card:hover {
+    background-color: aquamarine;
+    color: navy;
+    box-shadow: 0 5px 5px #ededed;
+    position: relative;
+    top: -5px;
+    cursor: pointer;
+}
+
+.formular {
+    padding: 30px;
+}
+
+.formular input {
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+.formular input:focus {
+    border-bottom: 2px solid navy;
+}
+
+button:active {
+    background-color: red;
+}
+
+input:checked {
+    outline: 2px solid red;
+}
+
+[type="checkbox"] {
+    display: none;
+}
+
+[type="checkbox"]+label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: lightblue;
+    border-radius: 3px;
+    border: 2px solid rgb(0, 0, 40);
+}
+
+[type="checkbox"] :checked + label {
+    background: blue;
+}

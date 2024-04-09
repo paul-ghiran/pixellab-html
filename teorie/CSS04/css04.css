@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0.75em 0;
+}
+
+.capitol-fc {}
+
+.capitol-fc *:first-child {
+    font-size: 1.5em;
+}
+
+.capitol-fc *:last-child {
+    padding-left: 30px;
+}
+
+ol {
+    padding-left: 30px;
+}
+
+ol>li:nth-child(3) {
+    font-weight: bold;
+}
+
+
+ol>li:nth-child(odd) {
+    background-color: #ededed;
+}
+
+
+ol>li:nth-child(3n + 3) {
+    color: blue;
+}
+
+.capitol-ft *:first-of-type {
+    font-size: 1.5em;
+}
