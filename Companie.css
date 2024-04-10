@@ -1,47 +1,134 @@
-.clean {
-    width:60px;
-    height:60px;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
 }
-  nav {
-        
-        float: right;
-        font-size: 24px;
-        margin-top: 20px;
-        
-        
-        
-    }
-   #menu{
-   
-    border:3px solid orange;
-    background-color: blueviolet;
-    color:aliceblue;
-    
-    
-   }
-   nav a {
-    color: aliceblue;
-    text-decoration: none;
 
-   }
-.container{
-    width: 1200px;
-    border:3px solid orange;
-    box-sizing: content-box;
-    margin-top: 50px;
-   
+.clearfloats{
+clear: both;
 }
-  body{
-    background-color: #ededed;
+body{
+    padding-top: 80px;
+    font-family: sans-serif;
+}
+header {
+position: fixed;
+width: 100%;
+border: 2px solid orange;
+background-color: blueviolet;
+padding: 7px;
+top:0;
+}
 
-  }
+.logo {
+    height: 60px;
+    width: 60px;
+    float: left;
+}
+nav {
+line-height: 24px;
+float: right;
+}    
+nav a {
+text-decoration: none;
+color: azure;
+display: inline-block;
+padding: 0px 15px;
+border-left: 1px solid azure;
+margin-top: 18px;
+
+}
+nav a:first-of-type {
+border-left: 0;
+}
+
 main{
-   display: flex;
-   justify-content: center;
-   
-}
-h2{
-    font-size: 36px;
-    color:rgb(0,0, 64);
+margin:50px auto;
+width:1200px;
+border:3px solid orange;
+background-color:rgba(28, 191, 255, 0.397)
 }
 
+
+section {
+padding:0    25px;
+padding-top: 100px;
+margin-bottom: -50px;
+
+
+}
+
+section h1{
+font-size: 36px;
+margin-bottom: 0.75em;  
+color: orange;
+text-align: center;
+}
+
+.cleantext, .cleanimeage{
+float: left;
+
+}
+.cleantext{
+width: 70%;
+padding-top: 20px;
+
+}
+
+.cleanimeage{
+width: 20%; 
+margin-left: 10%;
+}
+img{
+width: 100%;
+}
+
+.imaginistanga{
+    width:66%;
+    float: left;
+}
+.imaginistanga img{
+height: 400px;
+
+}
+.imaginistanga img+img {
+margin-top: -4px;
+}
+
+.imaginedreapta img {
+width: 34%;
+height: 800px;
+float: right;
+}
+
+.packages-box{
+border: 2px solid orange;
+display: inline-block;
+width: 30%;
+text-align: center;
+padding: 10px;
+vertical-align: top;    
+height: 159px;
+
+}
+
+.center{
+display: flex;
+justify-content:space-between;
+}
+
+main section:last-of-type{
+padding-bottom: 100px;
+}
+
+a.top{
+text-decoration: none;
+background-color: blueviolet;
+color: azure;
+position: fixed;
+bottom: 30px;
+right: 30px;
+padding: 15px;
+display: inline-block;
+}
