@@ -1,0 +1,17 @@
+p {
+    transition: 1s ease all;
+}
+
+p:hover {
+    color: red;
+}
+
+#houdini-cb+b {
+    opacity: 0;
+    transition: 0.4s ease opacity;
+}
+
+
+#houdini-cb:checked+b {
+    opacity: 1;
+}
