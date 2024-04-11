@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css06.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <header>
+        <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="" class="logo">
+        <nav><a href="#">Lorem</a><a href="#">Ipsum</a><a href="#">Lipsum</a></nav>
+    </header>
+    <h1>
+    </h1>
+
+    <main class="container">
+        <div class="row ">
+            <div class="col">
+                <h1>Bootstrap Library</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <p>
+                    Bootstrap functioneaza pe baza unui grid de 12 coloane, folosind .container si .rows
+                    putem avea coloanele respective specificate sub forma col-6 (adica jumatate din latime) sau col
+                    pentru
+                    latime automata.
+                </p>
+                <p>Cel mai important lucru de retinut aici este ca trebuie sa folosim o structura bazata pe elemente cu
+                    clasa "container" care includ cate un element cu clasa "row" pt fiecare rand pe care vrem sa-l avem
+                    in container, si apoi in "row" avem elementele de tip "col" (sau variatii de genul "col-5")</p>
+            </div>
+            <div class="col"><img src="https://i.imgur.com/dRoAAOF.png" alt=""></div>
+        </div>
+        <div class="row vertical-spacing">
+            <div class="col">
+                <h1>Our 2/3+1/3 projects</h1>
+            </div>
+        </div>
+        <div class="row projects-images">
+            <div class="col-12 col-lg-8"><img src="../CSS04/bob-builder-srl/img1.png" alt=""><img
+                    src="../CSS04/bob-builder-srl/img2.png" alt=""></div>
+            <div class="col-12 col-lg-4 right-images"><img src="../CSS04/bob-builder-srl/img3.png" alt=""></div>
+        </div>
+
+
+        <div class="row vertical-spacing">
+            <div class="col">
+                <h1>Types of columns</h1>
+            </div>
+        </div>
+
+        <div class="row services-section">
+            <div class="col"></div>
+            <div class="col-12 col-sm-6 col-lg-3 service-box">
+                <h2>Coloane <br>auto</h2>
+                <p>.col isi decide automat latimea</p>
+            </div>
+            <div class="col"></div>
+            <div class="col-12 col-sm-6 col-lg-3 service-box">
+                <h2>Coloane <br>explicite</h2>
+                <p>.col-6 ocupa jumatate din grid</p>
+            </div>
+            <div class="col"></div>
+            <div class="col-12 col-sm-6 col-lg-3 service-box">
+                <h2>Coloane <br>responsive</h2>
+                <p>.col-sm-6 ocupa 6 col pe device-uri mici+</p>
+            </div>
+            <div class="col"></div>
+        </div>
+
+        <div class="row vertical-spacing">
+            <h1>Media Queries</h1>
+            <p>Media queries, @media in CSS, sunt reguli speciale care spun CSS-ului pe ce criterii sa se aplice, sau
+                nu.</p>
+                <p>Se numesc media queries pentru ca "intreaba" (to query) dipozitivul multimedia ce dimensiuni sau caracteristici are, si aplica anumite stiluri CSS pentru a suprascrie alt CSS.</p>
+                <ul>
+                    <li>min-width (specificat in pixeli)</li>
+                    <li>max-width (specificat in pixeli)</li>
+                    <li>orientation (portrait sau landscape)</li>
+                </ul>
+
+                <div class="color-example"></div>
+        </div>
+    </main>
+</body>
+
+</html>

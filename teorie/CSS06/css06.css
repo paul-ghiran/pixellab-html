@@ -1,0 +1,87 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-bottom: 3px solid rgb(110 17 244);
+}
+
+header img {
+    width: 60px;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+    float: right
+}
+
+nav a {
+    line-height: 50px;
+    float: right;
+    padding: 0 30px;
+}
+
+body {
+    padding-top: 100px;
+}
+
+main {
+    padding: 30px;
+    border: 3px solid rgb(110 17 244);
+}
+
+.vertical-spacing {
+    margin-top: 50px;
+}
+
+.projects-images img {
+    margin-left: -12px;
+    width: calc(100% + 24px);
+    height: 400px;
+}
+
+.projects-images .right-images img {
+    height: 800px;
+}
+
+.service-box {
+    border: 3px solid rgb(110 17 244);
+}
+
+@media (max-width: 992px) {
+
+    .projects-images img,
+    .projects-images .right-images img {
+        height: 200px;
+    }
+
+}
+
+.color-example {
+    background: red;
+    height: 100px;
+    width: 100px;
+}
+
+@media (max-width: 768px) {
+
+    nav a {
+        padding: 0 12px;
+    }
+
+    .color-example {
+        background: blue;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+
+    .color-example {
+        background: yellow;
+    }
+}
