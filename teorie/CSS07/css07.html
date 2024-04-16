@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css07.css">
+</head>
+
+<body>
+    <nav class="navigatie">
+        <ul>
+            <li class="navigatie__item"><a href="../CSS07/css07.html">CSS</a></li>
+            <li class="navigatie__item"><a href="../scss/index.html">SCSS</a>
+                <div class="navigatie__submeniu">
+                    <a href="#">Despre noi</a>
+                    <a href="#">Despre altii</a>
+                    <a href="#">Despre pisici</a>
+                    <a href="#">Despre catei</a>
+                </div>
+            </li>
+            <li class="navigatie__item"><a href="../npm/npm.html">NPM</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Keyframes</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="checkbox" id="cb">
+                <label for="cb">Start Animation</label>
+                <div class="blue-box"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3>Sintaxa</h3>
+                1. Declaratia keyframe-ului, si a setului de cadre (frames) cheie, incluzand
+                numele, si cadrele denotate cu 0%. Aceste cadre pot avea oricate proprietati asociate.
+                <pre>
+ @keyframes leftRight {
+   0% {
+      css-property: value;
+   }
+ }
+</pre>
+                2. Pe element trebuie sa punem keyframe-ul folosind regula CSS "animation".
+                Animation poate primi un keyframe name, o durata, si daca sa ramana sau nu schimbat.
+
+                <br>Pentru shorthand notation folosim in general timp scurt, cateva secunde si fie "infinite" fie
+                "forwards" daca dorim sa controlam ce se intampla dupa rularea animatiei.
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3>Min-height, max-height </h3>
+                <p>Min & max width & height declara limitele unui element, astfel incat elementul nu va ocupa exact
+                    height-ul specificat cand ii dam 200px max-height ci va ocupa cat are el nevoie, pana in limita de
+                    200px</p>
+                <img src="https://cdn.britannica.com/34/235834-050-C5843610/two-different-breeds-of-cats-side-by-side-outdoors-in-the-garden.jpg"
+                    alt=""><img
+                    src="https://th-thumbnailer.cdn-si-edu.com/qZt6OhDKTPQxhAMLDCdBgDBKXn4=/fit-in/1600x0/filters:focal(960x640:961x641)/https%3A%2F%2Ftf-cmsv2-smithsonianmag-media.s3.amazonaws.com%2Ffiler_public%2Ff6%2Ff3%2Ff6f3493a-467f-4474-8c52-af5d021414b6%2Fcat-5778777_1920.jpg"
+                    alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3>Overflow </h3>
+                <p>Proprietatea overflow primeste valori precum scroll, auto, hidden si se aplica in momentul in care
+                    elementele copii ies din limitele parintelui.
+                    Acest overflow poate fi de asemenea si specificat pe directie, si anume overflow-x si overflow-y.
+                    Overflow se aplica elementor copil cu "position:absolute" doar daca elementul cu overflow: hidden
+                    este cel putin "position:relative"
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

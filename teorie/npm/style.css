@@ -1,0 +1,33 @@
+.navigatie a {
+  display: inline-block;
+  padding: 5px 15px; }
+
+.navigatie ul {
+  padding: 0; }
+
+.navigatie__item {
+  display: inline-block;
+  position: relative;
+  max-height: 20px;
+  transition: 0.4s ease all; }
+
+.navigatie__submeniu {
+  position: absolute;
+  top: 20px;
+  background-color: rgba(248, 248, 248, 0.4);
+  width: 100px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 1s ease all; }
+
+.navigatie__item:hover .navigatie__submeniu {
+  max-height: 200px; }
+
+.navigatie__submeniu a {
+  color: #222;
+  display: block; }
+
+body {
+  font-family: sans-serif; }
+  body h2 {
+    font-family: Arial; }

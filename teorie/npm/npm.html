@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPM</title>
+    <link rel="stylesheet" href="./style.min.css">
+</head>
+
+<body>
+    <nav class="navigatie">
+        <ul>
+            <li class="navigatie__item"><a href="../CSS07/css07.html">CSS</a></li>
+            <li class="navigatie__item"><a href="../scss/index.html">SCSS</a>
+                <div class="navigatie__submeniu">
+                    <a href="#">Despre noi</a>
+                    <a href="#">Despre altii</a>
+                    <a href="#">Despre pisici</a>
+                    <a href="#">Despre catei</a>
+                </div>
+            </li>
+            <li class="navigatie__item"><a href="../npm/npm.html">NPM</a></li>
+        </ul>
+    </nav>
+    <h2>npm</h2>
+    npm, node package manager este o unealta care ne ajuta sa instalam / dezinstalam si importamn "packages" adica
+    bucati de cod puse la dispozitie de catre altii pe npmjs.com
+    <h2>Cum se foloseste</h2>
+    Fiecare proiect va trebui sa aiba un "package.json" care va specifica ce dependinte avem. Aceste dependinte vor fi
+    specificate in "dependencies" sau "devDependencies".
+
+    <h3>Instalarea pachetelor</h3>
+    Pentru a instala pachetele specificate in package.json rulam comanda "npm install".
+
+    <h3>Rularea comenzilor</h3>
+    Pentru a rula comenzile enumerate la rubrica "scripts" in package.json vom rula "npm run numelecomenzii". In cazul
+    nostru avem npm run build-css
+
+    <h3>!!Gitignore!!</h3>
+    Atentie- Pentru a nu incarca pachetele in github va trebui sa cream un fisier numit .gitignore in care vom scrie
+    "node_modules/". Acest gitignore va avea singurul rol de a spune gitului ce fisiere sau foldere sa ignore.
+</body>
+
+</html>
