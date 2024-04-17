@@ -1,0 +1,77 @@
+.blue-box {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+input:checked~.blue-box {
+    animation: leftRight 2s forwards;
+}
+
+@keyframes leftRight {
+    0% {
+        margin-left: 0;
+    }
+
+    50% {
+        margin-left: 200px;
+    }
+
+    80% {
+        margin-left: 300px;
+        background-color: yellow;
+        transform: rotate(90deg)
+    }
+
+    100% {
+        margin-left: 402px;
+    }
+}
+
+.navigatie ul {
+    padding: 0;
+}
+
+.navigatie ul .navigatie__item {
+    display: inline-block;
+    position: relative;
+    max-height: 20px;
+    transition: 0.4s ease all;
+}
+
+.navigatie a {
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+.navigatie__submeniu {
+    top: 20px;
+    width: 100px;
+    max-height: 0px;
+    overflow: hidden;
+    position: absolute;
+    transition: 1s ease all;
+    background-color: rgba(248, 248, 248, 0.4);
+
+
+}
+
+.navigatie ul li:hover .navigatie__submeniu {
+    max-height: 200px;
+}
+
+.navigatie__submeniu a {
+    color: #222;
+    display: block;
+}
+
+img {
+    width: 40%;
+    min-width: 300px;
+    max-width: 500px;
+
+}
+
+img+img {
+    margin-left: 10%;
+}

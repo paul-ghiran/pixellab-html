@@ -1,0 +1,39 @@
+.blue-box {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+input:checked~.blue-box {
+    animation: leftRight 2s forwards;
+}
+
+@keyframes leftRight {
+    0% {
+        margin-left: 0;
+    }
+
+    50% {
+        margin-left: 200px;
+    }
+
+    80% {
+        margin-left: 300px;
+        background-color: yellow;
+        transform: rotate(90deg)
+    }
+
+    100% {
+        margin-left: 402px;
+    }
+}
+
+img {
+    width: 40%;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+img+img {
+    margin-left: 10%;
+}
