@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.min.css">
+</head>
+
+<body>
+    <h1>Display Flex</h1>
+    <p>Ca afisaj propriu, un element cu
+        <span class="code">display: flex</span> va ocupa intregul rand disponibil, alternativa sa fiind un <span
+            class="code">display: inline-flex</span>.
+
+    </p>
+    <p>De retinut: Flex se foloseste pe elementele container pentru a dicta comportamentul elementlor copii</p>
+    <h4>Flex Direction</h4>
+    <ul class="flex flex-ul">
+        <li>Row</li>
+        <li>Column</li>
+        <li>Row-Reverse</li>
+        <li>Column-Reverse</li>
+    </ul>
+    <h4>Gap </h4>
+    <p>Putem specifica un gap (px sau alte unitati de masura i.e. procente, vw) intre elemente care va fi aplicat
+        indiferent de directia flexului.</p>
+
+    <h4>Flex-wrap</h4>
+    <div class="parinte-800">
+        <p>Exemplu nowrap - elementele vor fi unul langa altul (in cazul row) dar nu vor trece pe rand nou cand ies din
+            dimensiunea parintelui.</p>
+        <p>Pentru a scrolla un element care iese din parinte putem sa punem <span class="code">overflow: auto</span> pe
+            parinte. Pentru a ascunde
+            partea care iese, <span class="code">overflow: hidden</span>.</p>
+        <ul class="flex">
+            <li>Exemplu </li>
+            <li>Exemplu </li>
+            <li>Exemplu </li>
+            <li>Exemplu </li>
+            <li>Exemplu </li>
+            <li>Exemplu </li>
+            <li>Exemplu </li>
+            <li>Exemplu </li>
+            <li>Exemplu </li>
+            <li>Exemplu </li>
+            <li>Exemplu </li>
+            <li>Exemplu </li>
+        </ul>
+        <p>Wrap:</p>
+        <ul class="flex flex-wrap">
+            <li>Exemplu </li>
+            <li>Exemplu </li>
+            <li>Exemplu </li>
+            <li>Exemplu </li>
+            <li>Exemplu </li>
+            <li>Exemplu </li>
+            <li>Exemplu </li>
+            <li>Exemplu </li>
+            <li>Exemplu </li>
+            <li>Exemplu </li>
+            <li>Exemplu </li>
+            <li>Exemplu </li>
+        </ul>
+    </div>
+
+    <h4>Align items</h4>
+    <ul class="flex flex-align-items">
+        <li>Exemplu Flex-start</li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+    </ul>
+    <ul class="flex flex-align-items">
+        <li>Exemplu align items = center</li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+    </ul>
+    <ul class="flex flex-align-items">
+        <li>Exemplu flex-end</li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+    </ul>
+
+    <h4>Justify-content</h4>
+
+    <ul class="flex flex-justify-content">
+        <li>Exemplu space-around</li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+    </ul>
+
+    <ul class="flex flex-justify-content">
+        <li>Exemplu space-between</li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+    </ul>
+
+    <ul class="flex flex-justify-content">
+        <li>Exemplu space-evenly</li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+        <li>Exemplu </li>
+    </ul>
+
+    <h4>Flex Basis</h4>
+    <p>In functie de directia parintelui, flex-basis va insemna fie width fie height in mod automat, flex-direction row
+        va vedea flex-basis ca fiind latime, flex-direction: column il va aplica pe height</p>
+
+    <h4>Flex-grow</h4>
+    <p>Flex-grow spune elementelor daca sa creasca in tot spatiul disponibil daca acesta exista.</p>
+    <p>Valorile sunt <span class="code">flex-grow:1</span> pentru a zice elementelor sa creasca, <span
+            class="code">flex-grow:0</span> pentru a le zice sa nu o faca, aceasta fiind si varianta implicita.</p>
+
+    <h4>Flex-shrink</h4>
+    <p>Opusul flex-grow, acesta spune elementelor daca sa scada atunci cand se poate daca asta ar permite tuturor
+        elementelor sa fie pe acelasi rand (<span class="code">flex-shrink: 1</span>) aceasta fiind valoarea implicita.
+        Daca nu dorim scaderea fortata folosim
+        <span class="code">flex-shrink: 0</span>,
+    </p>
+</body>
+
+</html>
