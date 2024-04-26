@@ -105,6 +105,45 @@ ul li {
     width: 30vw;
     height: 20vw;
 }
+<<<<<<< HEAD
+h1, h2, h3 { 
+    font-family: sans-serif;
+
+}
+h2, h3 {
+    color:#262626;
+}
+h3 {
+    text-decoration: underline;
+    color: #444444;
+    margin-top:  40px ;
+    
+}
+.exemple {
+    font-family:"Courier New",monospace ;
+    background-color:#ededed ;
+    padding: 10px; 
+}
+h2 {
+    margin-top: 60px;
+}
+h3 + p {
+    font-weight: bold;
+}
+
+.button{
+    width: 100px;
+    background-color: blue;
+    padding: 10px;
+    margin-top: 30px;
+    
+}
+.button a {
+    color:white;
+}
+
+
+=======
 
 
 /* Rezovlare */
@@ -144,3 +183,4 @@ a{
     padding: 10px;
     width: 100px;
 }
+>>>>>>> f24ad16922996213809e27239498af5b598aada3

@@ -1,0 +1,106 @@
+nav{
+    background-color:rgb(1, 21, 63); 
+    padding: 20px 0px;
+   
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    border-left: 1px solid white;
+    padding: 0px 55px;
+
+    
+}
+
+.search{
+    width: 30px;
+    rotate: 360deg;
+    filter:invert(100);
+
+}
+nav a:last-child{
+          border: none;
+        
+}
+select{
+    width: 250px;
+}
+.logo{
+    height: 30px;
+}
+.banner{
+    position: relative;
+    background-color: rgb(1, 21, 63);
+   
+}
+h1{
+    color:white;
+    font-size: 45px;
+}
+h3{
+    color:rgba(146, 145, 143, 0.911);
+    font-size: 15px;
+}
+.banner-content{
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+.h-sp img{
+    height:150px;
+    width:400px;
+    
+}
+button{
+    background-color: orange;
+    color:white;
+    border: none;
+    display: block;
+}
+.h-sp h2{
+    padding-top: 20px;
+}
+.poza1{
+    width: 100%;
+}
+.orgbutton{
+    padding: 20px;
+}
+.form input{
+   margin-bottom: 20px;
+   }
+   .form label{
+    color:lightslategray;
+   }
+  
+   footer{
+     color:lightslategray;
+   }
+   footer a{
+    text-decoration: none;
+    color: lightslategray;
+   }
+   footer ul{
+    list-style-type: none;
+    padding-left: 0px;
+   }
+   .center{
+    display: flex;
+    justify-content: center;
+   }
+   .gdpr{
+    width: 15px;
+    height: 15px;
+   }
+   .logofoot{
+    height: 25px;
+    width: 45px;
+   }
+   .logomsg{
+    position:fixed;
+    width: 40px;
+    bottom:20px;
+    right:15px;
+    z-index: 1;
+    border-radius: 10px;
+   }
